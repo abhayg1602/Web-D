@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms Demo</h1>
+    <button type="submit">This can't Submit as outside the form</button>
+    <form action="https://www.google.com/search" method="GET">
+        <p>
+            <label for="Text">Enter the text: </label>
+            <input id="Text" type="text" placeholder="Enter Text" name="Username">
+        </p>
+        <p>
+            <label for="Password">Enter the password:</label>
+            <input id="Password" type="password" placeholder="Enter password" name="Password">
+        </p>
+        <p>
+            <label for="Number">Enter a number:</label>
+            <input id="Number" type="number" placeholder="Enter a number" name="Num">
+        </p>
+        <button type="submit">Submit</button>
+        <button type="button">Can't Submit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" placeholder="Enter text">
+        <button>Search!</button>
+    </form>
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" placeholder="Enter text">
+        <button>Search Youtube!</button>
+    </form>
+    <h2>Check box</h2>
+    <form action="/birds">
+        <label for="bird">Do you like birds </label>
+        <input type="checkbox" id="bird" name="q">
+        <button>Submit</button>
+    </form>
+
+    <form action="/form">
+        <input type="radio" id="s" value="s" name="size">
+        <label for="s">S</label>
+
+        <input type="radio" id="xs" value="xs" name="size">
+        <label for="xs">XS</label>
+        <input type="radio" id="l" value="l" name="size" checked>
+        <label for="l">L</label>
+        <p>
+            <label for="meal"></label>
+            <select name="meal" id="meal">
+                <option value="Dal">Dal</option>
+                <option value="Paneer">Paneer</option>
+                <option value="Rice">Rice</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="cheese">Amount of cheese</label>
+            <input type="range" id="cheese" min="1" max="10" name=cheese_level>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+    </form>
+
+    <form>
+        <label for="number">Enter Number:</label>
+        <input type="number" id="number" name="number" min="1" max=100><br>
+        <label for="textarea">Enter text:</label>
+        <textarea name="/text" id="textarea" cols="20" rows="2"></textarea>
+        <br>
+        <button>Submit</button>
+    </form>
+
+    <h2>Validation</h2>
+    <form action="/dummy">
+        <label for="required">Enter:</label>
+        <input type="text" id="required" required name="test">
+        <br>
+        <label for="user">Enter the name: </label>
+        <input type="text" id="user" minlength="5" maxlength="10" required>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
